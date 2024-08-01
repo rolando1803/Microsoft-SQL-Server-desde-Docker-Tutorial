@@ -9,6 +9,11 @@
 ![image](https://github.com/user-attachments/assets/9ee66cf4-3194-4fc3-b8a0-e64a1a88f554)
 ![image](https://github.com/user-attachments/assets/7e7c6613-1377-46b0-b0b9-a5ad9b6f6d35)
 ![image](https://github.com/user-attachments/assets/82b25f91-5ff6-44ed-b0ca-678be696b66f)
+
+```bash
+docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=yourStrong#Password" -p 1433:1433 --name sqlserver --mount src=db_sqlServer,dst=/var/opt/mssql -d mcr.microsoft.com/mssql/server:2022-latest
+```
+
 ![image](https://github.com/user-attachments/assets/da62a0c2-e2b7-42bf-a3ab-8cbfff42a94d)
 ![image](https://github.com/user-attachments/assets/2c0759bf-bfed-4e8d-9e34-09c75ee725d2)
 ![image](https://github.com/user-attachments/assets/8369d323-6612-42e7-b41b-9ebe13730b32)
